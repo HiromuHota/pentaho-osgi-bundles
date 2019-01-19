@@ -46,7 +46,7 @@ public class WebContextServlet extends HttpServlet {
 
   static final String WEB_CONTEXT_JS = "webcontext.js"; //$NON-NLS-1$
 
-  static final String CONTEXT_PATH = "/spoon/osgi/";
+  static final String CONTEXT_PATH = "/spoon/osgi";
   private static final String REQUIREJS_INIT_LOCATION = "requirejs-manager/js/require-init.js?useFullyQualifiedUrl=false";
 
   private static final String DEFAULT_SERVICES_ROOT = "cxf/";
@@ -210,7 +210,7 @@ public class WebContextServlet extends HttpServlet {
       writer.write( "<link rel='stylesheet' type='text/css' href=" );
     }
 
-    writer.write( "'\" + CONTEXT_PATH + \"" + location + "'>" );
+    writer.write( "'\" + CONTEXT_PATH + \"/" + location + "'>" );
 
     writer.append(  isJavascript ? ( "</scr\" + \"ipt>" ) : "" );
     writer.write( "\");\n" );
