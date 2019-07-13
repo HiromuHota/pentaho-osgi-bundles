@@ -28,7 +28,7 @@ deploy:
     - $HOME/.m2/repository/pentaho/pentaho-pdi-platform/$dist/pentaho-pdi-platform-$dist*.jar
   skip_cleanup: true
   on:
-    branch: webspoon-8.2
+    branch: webspoon-8.3
   name: webSpoon/nightly
   body: Auto-build of $TRAVIS_BRANCH ($TRAVIS_COMMIT) by Travis CI on $(date +'%F %T %Z').
   prerelease: true
